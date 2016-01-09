@@ -1,0 +1,19 @@
+{
+  "name": "es2015-classes",
+  "version": "1.0.0",
+  "description": "Introduction to classes in ES2015",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanking/es2015-classes.git"
+  },
+  "author": "Sean King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanking/es2015-classes/issues"
+  },
+  "homepage": "https://github.com/seanking/es2015-classes#readme",
+  "devDependencies": {
+  }
+}
