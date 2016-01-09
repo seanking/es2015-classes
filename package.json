@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Introduction to classes in ES2015",
   "scripts": {
+    "test": "mocha --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,6 @@
   },
   "homepage": "https://github.com/seanking/es2015-classes#readme",
   "devDependencies": {
+    "mocha": "^2.3.4"
   }
 }
