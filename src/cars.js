@@ -6,8 +6,8 @@ class Car {
     this.speed = 0;
   }
 
-  increaseSpeed(speed) {
-    this.speed += speed;
+  increaseSpeed() {
+    this.speed += 1;
   }
 
   stop() {
@@ -18,6 +18,10 @@ class Car {
 class FastCar extends Car {
   constructor() {
     super(6);
+  }
+
+  increaseSpeed() {
+    this.speed += 3;
   }
 }
 

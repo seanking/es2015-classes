@@ -13,18 +13,18 @@ describe('Car', () => {
     assert.equal(car.cylinders, 4);
   });
 
-  it('should increase speed', () => {
+  it('should increase the speed', () => {
     // Given
     const car = new Car();
 
     // When
-    car.increaseSpeed(10);
+    car.increaseSpeed();
 
     // Then
-    assert.equal(car.speed, 10);
+    assert.equal(car.speed, 1);
   });
 
-  it('should stop car', () => {
+  it('should stop the car', () => {
     // Given
     const car = new Car();
     car.speed = 10;
@@ -44,5 +44,16 @@ describe('FastCar', () => {
 
     // Then
     assert.equal(fastCar.cylinders, 6);
+  });
+
+  it('should increase the speed', () => {
+    // Given
+    const fastCar = new FastCar();
+
+    // When
+    fastCar.increaseSpeed();
+
+    // Then
+    assert.equal(fastCar.speed, 3);
   });
 });
