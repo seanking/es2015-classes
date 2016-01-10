@@ -1,9 +1,18 @@
 'use strict';
 
 const assert = require('assert');
-const Car = require('../src/cars');
+const Car = require('../src/cars').Car;
+const FastCar = require('../src/cars').FastCar;
 
 describe('Car', () => {
+  it('should have four cyliners', () => {
+    // When
+    const car = new Car();
+
+    // Then
+    assert.equal(car.cylinders, 4);
+  });
+
   it('should increase speed', () => {
     // Given
     const car = new Car();
@@ -25,5 +34,15 @@ describe('Car', () => {
 
     // Then
     assert.equal(car.speed, 0);
+  });
+});
+
+describe('FastCar', () => {
+  it('should have six cyliners', () => {
+    // When
+    const fastCar = new FastCar();
+
+    // Then
+    assert.equal(fastCar.cylinders, 6);
   });
 });
