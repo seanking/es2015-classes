@@ -24,16 +24,16 @@ describe('Car', () => {
     assert.equal(car.speed, 1);
   });
 
-  it('should stop the car', () => {
+  it('should decrease the speed', () => {
     // Given
     const car = new Car();
     car.speed = 10;
 
     // When
-    car.stop();
+    car.decreaseSpeed();
 
     // Then
-    assert.equal(car.speed, 0);
+    assert.equal(car.speed, 9);
   });
 });
 

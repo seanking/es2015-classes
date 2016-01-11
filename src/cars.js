@@ -10,8 +10,8 @@ class Car {
     this.speed += 1;
   }
 
-  stop() {
-    this.speed = 0;
+  decreaseSpeed() {
+    this.speed -= 1;
   }
 }
 
