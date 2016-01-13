@@ -13,6 +13,10 @@ class Car {
   decreaseSpeed() {
     this.speed -= 1;
   }
+
+  static pressHorn() {
+    return 'beep';
+  }
 }
 
 class FastCar extends Car {

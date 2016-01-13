@@ -35,6 +35,14 @@ describe('Car', () => {
     // Then
     assert.equal(car.speed, 9);
   });
+
+  it('should press horn', () => {
+    // When
+    const sound = Car.pressHorn();
+
+    // Then
+    assert.equal(sound, 'beep');
+  });
 });
 
 describe('FastCar', () => {
