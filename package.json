@@ -10,7 +10,7 @@
   "eslintConfig": {
     "extends": "airbnb/base",
     "env": {
-        "mocha": true
+      "mocha": true
     }
   },
   "repository": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/seanking/es2015-classes#readme",
   "devDependencies": {
+    "babel-register": "^6.4.3",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^3.1.0",
     "mocha": "^2.3.4"
